@@ -1,0 +1,43 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="MIT"
+
+[[mods]]
+    modId="nuclearmeltdownaddon"
+    version="1.0.0"
+    displayName="Nuclear Meltdown Addon"
+    displayTest="IGNORE_SERVER_VERSION"
+    description='''
+        Replaces the Mekanism fission reactor meltdown with a realistic nuclear bomb explosion:
+        a massive central blast, continuous expanding shockwave rings out to 200 blocks,
+        scaled entity damage up to 300 blocks away, and fire spread across 200 blocks.
+        Server-side only — clients do not need this installed.
+    '''
+
+[[dependencies.nuclearmeltdownaddon]]
+    modId="forge"
+    mandatory=true
+    versionRange="[47.1.76,)"
+    ordering="NONE"
+    side="SERVER"
+
+[[dependencies.nuclearmeltdownaddon]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.20.1,1.21)"
+    ordering="NONE"
+    side="SERVER"
+
+[[dependencies.nuclearmeltdownaddon]]
+    modId="mekanism"
+    mandatory=true
+    versionRange="[10.3,)"
+    ordering="AFTER"
+    side="SERVER"
+
+[[dependencies.nuclearmeltdownaddon]]
+    modId="mekanismgenerators"
+    mandatory=true
+    versionRange="[10.3,)"
+    ordering="AFTER"
+    side="SERVER"
